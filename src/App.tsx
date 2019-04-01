@@ -48,8 +48,10 @@ class App extends Component<{}, IAppState> {
 	
 		return (
 			<div className="App">
+				{/*
 				<h1>RIV: React Image Viewer</h1>
 				<p>Number of images: {images.length}</p>
+				*/}
 				<div className="main" style={{
 						height: `${this.imageHeight}px`,
 						width: `${this.imageWidth}px`
