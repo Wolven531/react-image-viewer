@@ -1,20 +1,48 @@
 .App {
-	text-align: center;
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
 }
 
 .App .main {
-	background-color: #aaf;
+	background-color: #000;
 	overflow: hidden;
 	position: relative;
 }
 
-.App .image-swiper {
+.App .swiper {
 	display: flex;
+	height: 200px;
 	overflow-x: visible;
+	/* overflow-y: hidden; */
 	transition-property: transform;
 	will-change: transform;
 }
 
 .App img {
 	object-fit: contain;
+}
+
+.App .move {
+	display: flex;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: 0;
+}
+
+.App .back {
+	left: 5px;
+}
+
+.App .next {
+	right: 5px;
 }
